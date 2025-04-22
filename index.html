@@ -50,12 +50,12 @@
       <a href="#contact" class="button">Get in Touch</a>
     </section>
 
-    <!-- Nouvelle Section About -->
+    
         <section id="about" class="section">
           <h2 class="section-title">About</h2>
           <div class="about__container bd-grid">
             <div class="about__img">
-              <img src="asset/img/Profile.png" alt="About Image">
+              <img src="asset/img/Profile.PNG" alt="About Image">
             </div>
             <div class="about__text">
               <p>
@@ -69,13 +69,13 @@
 
 
 
-        <!-- Image illustrative pour les skills -->
+       
 
               <!-- Skills Section -->
       <section id="skills" class="section">
           <h2 class="section-title">Skills</h2>
           <div class="skills__container bd-grid">
-              <!-- Présentation générale des compétences -->
+              
               <div class="skill__item">
                   <p>
                     As a future engineer in mechatronics and energy engineering, I possess a broad range of skills.
@@ -84,7 +84,7 @@ Mechatronics, by its very essence, synergistically and systematically combines m
                   <img src="other/mecatro.png" alt="Illustration mécatronique" class="skill__img">
               </div>
 
-              <!-- Détail compétences par domaine -->
+              
               <div class="skill__detail">
                   <h4>Mechanic</h4>
                   <p>
@@ -284,7 +284,7 @@ Mechatronics, by its very essence, synergistically and systematically combines m
         <div class="modal-content">
         <span class="close">&times;</span>
         <div id="modal-body">
-            <!-- Le contenu sera injecté dynamiquement -->
+            
         </div>
         </div>
     </div>
@@ -431,7 +431,7 @@ Mechatronics, by its very essence, synergistically and systematically combines m
       
 
           <div class="project__item">
-            <img src="Pare-battage/pare-batt_miniature.png" alt="Palletizing Automation" class="project__thumb">
+            <img src="Pare-battage/pare-batt_miniature.JPG" alt="Palletizing Automation" class="project__thumb">
             <h3>Automated Fender Buoy Deployment</h3>
             <button 
               class="button see-more-btn" 
@@ -602,14 +602,14 @@ Mechatronics, by its very essence, synergistically and systematically combines m
     <div class="modal-content">
       <span class="close">&times;</span>
       <div id="modal-body">
-        <!-- Le contenu sera injecté dynamiquement -->
+        
       </div>
     </div>
   </div>
   
-  <!-- Script pour gérer l'ouverture/fermeture du modal -->
+  
   <script>
-    // Mise à jour dynamique du contenu du modal selon le bouton cliqué
+    
     document.querySelectorAll(".see-more-btn, .view-cursus-btn").forEach(btn => {
       btn.addEventListener("click", () => {
         const modalContent = btn.dataset.modalContent;
@@ -619,12 +619,12 @@ Mechatronics, by its very essence, synergistically and systematically combines m
       });
     });
     
-    // Gestion de la fermeture du modal
+    
     document.querySelector(".modal .close").addEventListener("click", () => {
       document.getElementById("project-modal").style.display = "none";
     });
     
-    // Fermer le modal en cliquant en dehors du contenu
+    
     window.addEventListener("click", event => {
       const modal = document.getElementById("project-modal");
       if (event.target === modal) {
@@ -663,7 +663,7 @@ Mechatronics, by its very essence, synergistically and systematically combines m
       <h2 class="section-title">Contact</h2>
       <div class="contact__container bd-grid">
           <div class="contact__info">
-              <!-- Email professionnel -->
+              
               <div class="contact__item">
                   <i class='bx bx-envelope'></i>
                   <p>antoine.robesco@student.hepl.be</p>
@@ -672,7 +672,7 @@ Mechatronics, by its very essence, synergistically and systematically combines m
                   </button>
               </div>
 
-              <!-- Email personnel -->
+              
               <div class="contact__item">
                   <i class='bx bx-envelope'></i>
                   <p>antoine.robesco@hotmail.com</p>
@@ -681,7 +681,7 @@ Mechatronics, by its very essence, synergistically and systematically combines m
                   </button>
               </div>
 
-              <!-- LinkedIn -->
+              
               <div class="contact__item">
                   <i class='bx bxl-linkedin-square'></i>
                   <a href="https://www.linkedin.com/in/antoine-robesco-1428142a8" target="_blank">LinkedIn Profile</a>
@@ -690,7 +690,7 @@ Mechatronics, by its very essence, synergistically and systematically combines m
       </div>
   </section>
 
-    <!-- Copy email buttons -->
+    
     <script>
       document.querySelectorAll(".copy-btn").forEach(btn => {
         btn.addEventListener("click", () => {
@@ -708,7 +708,7 @@ Mechatronics, by its very essence, synergistically and systematically combines m
     
 
 
-<!-- Ajoutez ce script en bas, avant la fermeture de la balise </body> -->
+
 <script>
     const navToggle = document.querySelector('.nav__toggle');
     const navList = document.querySelector('.nav__list');
@@ -717,7 +717,7 @@ Mechatronics, by its very essence, synergistically and systematically combines m
       navList.classList.toggle('active');
     });
   
-    // Ferme le menu lorsqu'un lien est cliqué
+    
     document.querySelectorAll('.nav__link').forEach(link => {
       link.addEventListener('click', () => {
         navList.classList.remove('active');
