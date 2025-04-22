@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Engineering Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Boxicons -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="asset/css/styles.css" />
+</head>
+
+<body>
+  <!-- Vanta background -->
+  <div id="vantabg"></div>
+  <div id="mask"></div>
+  
+  
+  <div id="vantabg"></div>
+  <div id="mask"></div>
+  <!-- Header -->
+  <header class="l-header">
+    <nav class="nav">
+      <a href="#home" class="nav__logo">MyPortfolio</a>
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__toggle"><i class="bx bx-menu"></i></div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="l-main">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <h1 class="hero__title">
+        Hello, I'm Antoine and <br>
+        <span id="typed"></span>
+      </h1>
+      <a href="#contact" class="button">Get in Touch</a>
+    </section>
+
+    <!-- Nouvelle Section About -->
+        <section id="about" class="section">
+          <h2 class="section-title">About</h2>
+          <div class="about__container bd-grid">
+            <div class="about__img">
+              <img src="asset/img/Profile.png" alt="About Image">
+            </div>
+            <div class="about__text">
+              <p>
+                Passionate about technology and innovation, I have developed skills in engineering and design through my academic journey.
+                My background in electromechanics and mechatronics allows me to approach projects with a multidisciplinary mindset.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <!-- Image illustrative pour les skills -->
+
+              <!-- Skills Section -->
+      <section id="skills" class="section">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills__container bd-grid">
+              <!-- Présentation générale des compétences -->
+              <div class="skill__item">
+                  <p>
+                    As a future engineer in mechatronics and energy engineering, I possess a broad range of skills.
+Mechatronics, by its very essence, synergistically and systematically combines multiple areas of expertise, including:
+                  </p>
+                  <img src="other/mecatro.png" alt="Illustration mécatronique" class="skill__img">
+              </div>
+
+              <!-- Détail compétences par domaine -->
+              <div class="skill__detail">
+                  <h4>Mechanic</h4>
+                  <p>
+                    Since my first year, I have taken numerous mechanics courses that have enabled me, through various study projects, to master component sizing, fit and tolerance calculations, creation of technical drawings, and part design using CAD.
+                  </p>
+                  <ul class="skills__list">
+                      <li class="skills__item">Autodesk Inventor</li>
+                      <li class="skills__item">Fusion 360</li>
+                      <li class="skills__item">Kissoft</li>
+                      <li class="skills__item">AutoCAD</li>
+                      <li class="skills__item">Mastercam</li>
+                  </ul>
+              </div>
+
+              <div class="skill__detail">
+                  <h4>Electricity &amp; Electronic</h4>
+                  <p>
+                    I also benefited from a solid education in electrical engineering, covering circuit theory, three‑phase voltage studies and motor operation, protection principles and neutral grounding systems, as well as an understanding of power networks, all reinforced through hands‑on laboratory work.
+                  </p>
+              </div>
+
+              <div class="skill__detail">
+                  <h4>Automation &amp; Control</h4>
+                  <p>
+                    I deepened my automation skills by tackling industrial PLC and robot programming as well as process control, then applied this expertise in practical Arduino‑based projects. Simultaneously, I developed applications in Python and MATLAB.
+                  </p>
+                  <ul class="skills__list">
+                      <li class="skills__item">TIA Portal</li>
+                      <li class="skills__item">ABB RobotStudio</li>
+                      <li class="skills__item">Arduino IDE</li>
+                      <li class="skills__item">MATLAB</li>
+                      <li class="skills__item">Python</li>
+                      <li class="skills__item">VS Code</li>
+                  </ul>
+              </div>
+
+              <div class="skill__detail">
+                  <h4>Simulation</h4>
+                  <p>
+                    I regularly created system models in Simulink to analyze their performance and develop digital twins.
+                  </p>
+                  <ul class="skills__list">
+                      <li class="skills__item">MATLAB / Simulink</li>
+                      <li class="skills__item">PLECS</li>
+                  </ul>
+              </div>
+
+              <div class="skill__detail">
+                  <h4>Energy</h4>
+                  <p>
+                    During my Master’s program, I undertook numerous projects on diverse energy systems: heat pumps, wind turbines, electric vehicle simulation, solar energy exploitation, and electro‑thermal building modeling.
+                  </p>
+              </div>
+
+              <div class="skill__detail">
+                  <h4>
+                    Transverse</h4>
+                  <p>
+                    During my studies, I also completed courses in engineering ethics, management, and research project leadership, as well as English training certified at Wallangues level B2. For more details, you can review my academic background.
+                  </p>
+              </div>
+              <div class="skills__cursus">
+                <button class="button view-cursus-btn" 
+                        data-modal-content='
+                          <div class="modal-section text-section">
+                            <h3>My Academic Cursus</h3>
+                            <div class="cursus-container">
+                              <div class="cursus-year">
+                                <h4>
+                                  Year 1 - Bachelor in Electromechanics (2019-2020)</h4>
+                                <ul class="cursus-courses">
+                                  <li>English</li>
+                                  <li>Computer Science Laboratory</li>
+                                  <li>Control Logic</li>
+                                  <li>CAD/CAM</li>
+                                  <li>Technical Drawing and Design Office (Part 1)</li>
+                                  <li>Applied Mathematics – Part 1</li>
+                                  <li>Electrical Circuit Theory – Part 1</li>
+                                  <li>Electrometry Laboratory</li>
+                                  <li>Applied Mathematics – Part 2</li>
+                                  <li>Electrical Circuit Theory – Part 2</li>
+                                  <li>Applied Chemistry</li>
+                                  <li>Materials Science</li>
+                                  <li>Metrology – Mechanical Testing (Part 1)</li>
+                                  <li>Expression Techniques</li>
+                                  <li>Metrology – Mechanical Testing (Part 2)</li>
+                                  <li>Strength of Materials</li>
+                                  <li>Solid Mechanics (Part 1)</li>
+                                  <li>Machining Theory</li>
+                                  <li>Conventional Machining Technologies</li>
+                                  <li>Mechanical Construction Technologies</li>
+                                  <li>Methods and CNC Office</li>
+                                  <li>Solid Mechanics (Part 2)</li>
+                                </ul>
+                              </div>
+                              <div class="cursus-year">
+                                <h4>Year 2 - Bachelor in Electromechanics (2020-2021)</h4>
+                                <ul class="cursus-courses">
+                                  <li>English</li>
+                                  <li>Programmable Logic Controllers (PLC) – Function Block Diagram (FBD)</li>
+                                  <li>Control Systems – Analysis Tools</li>
+                                  <li>Programmable Logic Controllers (PLC) – Ladder Diagram (LD)</li>
+                                  <li>Control Systems – PID Control</li>
+                                  <li>CAD/CAM/CIM</li>
+                                  <li>Technical Drawing and Design Office – Part 3</li>
+                                  <li>Technical Drawing and Design Office – Part 4</li>
+                                  <li>Communication Techniques</li>
+                                  <li>Fluid Mechanics – Part 1</li>
+                                  <li>Pneumatics</li>
+                                  <li>Electrical Machines – Part 1</li>
+                                  <li>Applied Mathematics</li>
+                                  <li>Industrial Physics and Thermodynamics – Part 1</li>
+                                  <li>Materials Science</li>
+                                  <li>Industrial Electronics</li>
+                                  <li>Electrical Machines – Part 2</li>
+                                  <li>Industrial Physics and Thermodynamics – Part 2</li>
+                                  <li>Strength of Materials</li>
+                                  <li>Mechanical Construction Technologies</li>
+                                  <li>Maintenance and Reliability</li>
+                                  <li>Applied Mechanics</li>
+                                  <li>Fluid Mechanics – Part 2</li>
+                                  <li>Welding Technology</li>
+                                </ul>
+                                
+                              </div>
+                              <div class="cursus-year">
+                                <h4>Year 4 – Bridging Year to Industrial Engineering</h4>
+                                <ul class="cursus-courses">
+                                  <li>Applied Chemistry</li>
+                                  <li>Industrial Instrumentation (Sensors)</li>
+                                  <li>Electrical Measurements & Simulation Laboratory</li>
+                                  <li>Electric Machines & Applications</li>
+                                  <li>Electrical Refresher & Supplements</li>
+                                  <li>Mechanical Component Design Project</li>
+                                  <li>Low‑Voltage Installation Design Project</li>
+                                  <li>Analog PID Control Design & Implementation Project</li>
+                                  <li>Electronics & Embedded Systems Project</li>
+                                  <li>Strength of Materials – Parts 1 & 2</li>
+                                  <li>Materials Science – Part 2</li>
+                                  <li>Mathematics 1</li>
+                                  <li>Mathematics 2</li>
+                                  <li>Heat Transfer</li>
+                                  <li>Economic & Financial Management</li>
+                                  <li>Scientific Research Methods</li>
+                                  <li>English Refresher</li>
+                                </ul>
+
+
+                              </div>
+                              <div class="cursus-year">
+                                <h4>Year 5 – M1 Industrial Engineering in Mechatronics & Energy Engineering</h4>
+                                <ul class="cursus-courses">
+                                  <li>Energy Projects 2: Applied Building Thermal Modeling</li>
+                                  <li>Mechatronics Projects 2: Industrial Process Control via PLC</li>
+                                  <li>Mechatronics Projects 1: Design of Automated Lines & Digital Twins</li>
+                                  <li>Mechatronics Projects 3: Project Management – Design & Rapid Prototyping</li>
+                                  <li>Mathematics & Signal Processing</li>
+                                  <li>Industrial PLC Project</li>
+                                  <li>Numerical Process Control Project</li>
+                                  <li>Entrepreneurial Projects 1 & 2</li>
+                                  <li>Material Forming Project</li>
+                                  <li>Mechanical Design Projects 1</li>
+                                  <li>Energy Projects 1: Modeling, System Simulation & Optimization of Energy Chains</li>
+                                </ul>
+
+                              </div>
+                              <div class="cursus-year">
+                                <h4>Year 6 – M2 Industrial Engineering in Mechatronics & Energy Engineering</h4>
+                                <ul class="cursus-courses">
+                                  <li>Industrial PLC Project</li>
+                                  <li>Energy Projects 3: Building Thermal Modeling</li>
+                                  <li>Energy Projects 4: Electrical Networks & Smart Grid</li>
+                                  <li>Mechatronics Projects 4: Robotics & Industrial Vision</li>
+                                  <li>Ethics, ESG, Introduction to Carbon Footprint & LCA</li>
+                                  <li>Industry 4.0</li>
+                                  <li>Sustainable Mobility Transition Project</li>
+                                  <li>English</li>
+                                  <li>Management</li>
+                                  <li>Research Project</li>
+                                  <li>Internship & Final Year Thesis</li>
+                                </ul>
+                              
+                              </div>
+                            </div>
+                          </div>'>
+                  View My Cursus
+                </button>
+              </div>
+            </section>
+      </section>
+
+        
+
+
+        <!-- Modal Structure -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-body">
+            <!-- Le contenu sera injecté dynamiquement -->
+        </div>
+        </div>
+    </div>
+
+
+    
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects__container bd-grid">
+
+      <div class="project__item">
+        <img src="Camera calibration/Calibration_grid.jpg" alt="Camera Calibration" class="project__thumb">
+        <h3>Camera calibration applied to a laser cutter with MATLAB</h3>
+        <button 
+          class="button see-more-btn" 
+          data-project="project1"
+          data-modal-content='
+            <div class="modal-section text-section">
+              <h3>Camera Calibration</h3>
+              <p>This project, carried out in a group as part of the Industrial Vision course, aimed to develop a camera‑calibration library in MATLAB without resorting to the built‑in Camera Calibration Toolbox. The ultimate goal was to create an application capable of estimating real‑world distances from a single image of the scene.</p>
+              <p>Camera calibration consists in determining a camera’s intrinsic and extrinsic parameters, which are initially unknown.</p>
+              <p><strong>Intrinsic parameters:</strong> specific to the camera (focal length, principal point, distortion coefficients, etc.).</p>
+              <p><strong>Extrinsic parameters:</strong> the camera’s position and orientation in space.</p>
+            </div>
+      
+            <div class="modal-section image-section">
+              <img src="Camera calibration/grid.png" loading="lazy" alt="Step 1 – Camera Calibration">
+              <p><strong>Step 1: Image Acquisition & Reference‐Point Detection</strong><br>
+              Capture a photo of the calibration grid, then detect characteristic points (circle centers or checkerboard intersections) and associate them with their known real‑world coordinates (in mm).</p>
+            </div>
+      
+           
+            <video 
+              src="Camera calibration/run_script.mp4" 
+              loading="lazy" 
+              controls 
+              autoplay 
+              muted 
+              loop 
+              width="100%"
+              alt="Step 2 – Parameter Optimization & Frame Generation">
+            </video>
+            <div class="modal-section image-section">
+              <p><strong>Step 2: Parameter Optimization & Cartesian Frame Generation</strong><br>
+              Minimize the reprojection error (e.g., via MATLAB’s <em>fmincon</em>) to obtain intrinsic and extrinsic parameters. Then manually select the origin and X/Y axes to convert pixel coordinates into physical millimetric positions.</p>
+            </div>
+
+            <video 
+              src="Camera calibration/auto_shoot.mp4" 
+              loading="lazy" 
+              autoplay
+              controls 
+              autoplay 
+              muted 
+              loop 
+              width="100%"
+              alt="Step 3 – Practical Application on the CO₂ Laser Cutter">
+            </video>
+            <div class="modal-section image-section">
+             
+              <p><strong>Step 3: Practical Application on the CO₂ Laser Cutter</strong><br>
+              Stream the work area with a camera, engrave a physical reference grid at (X₀, Y₀), align via MATLAB interface, then drive the laser head to any point selected in the video feed. Tests include engraving circular targets on A4, detecting centers via Hough transform, and sending G‑code commands from MATLAB for precise laser shots.</p>
+            </div>
+
+      
+            <div class="modal-footer">
+              Technologies used: MATLAB, Computer Vision. Year: 2024.
+            </div>
+          '>
+          See More
+        </button>
+      </div>
+      
+      
+      
+          
+      <div class="project__item">
+        <img src="Projet automation/miniature.jpg" alt="Palletizing Automation" class="project__thumb">
+        <h3>Automation of a palletizing station with TIA Portal</h3>
+        <button
+          class="button see-more-btn"
+          data-project="project2"
+          data-modal-content='
+            <div class="modal-section text-section">
+              <h3>Automation of a palletizing station with TIA Portal</h3>
+              <p>
+                This project was undertaken as part of the PLC‑Basics course at HEPL. Its primary goal was to automate a virtual palletizing station using Siemens TIA Portal and Factory IO. The aim was to implement a complete control logic covering every step of the process: detection, sorting, box orientation, pallet stacking, and the handling of incoming and outgoing pallets.
+              </p>
+            </div>
+      
+            <div class="modal-section image-section">
+              <video
+                src="Projet automation/Projet_automation2.mp4"
+                loading="lazy"
+                controls
+                autoplay
+                muted
+                loop
+                width="100%"
+              ></video>
+              <p>
+                The modeled process consisted of a fully automated palletizing station. Boxes of various sizes traveled along a conveyor and were pre‑sorted to retain only those of acceptable dimensions. Simultaneously, pallets arrived at random on two separate conveyors, requiring automation to prevent collisions. The pallets were then routed to the palletizer, which automatically stacked the boxes in multiple layers, alternating the orientation at each level to ensure maximum stability. Once a pallet was complete, it was automatically removed, allowing the cycle to restart with a new empty pallet.
+              </p>
+            </div>
+      
+
+      
+            <div class="modal-section image-section">
+              <video
+                src="Projet automation/Projet_automation3.mp4"
+                loading="lazy"
+                controls
+                autoplay
+                muted
+                loop
+                width="100%"
+              ></video>
+              <p>
+                The entire palletizing plant was simulated in Factory IO, while the automation logic was developed in Sequential Function Chart (SFC) within TIA Portal, using a simulated Siemens S7‑1200 PLC. The main challenge lay in managing the system’s numerous inputs and outputs, which demanded a clear and well‑structured control strategy..
+              </p>
+            </div>
+      
+            <div class="modal-section image-section">
+              <video
+                src="Projet automation/Projet_automation4.mp4"
+                loading="lazy"
+                controls
+                autoplay
+                muted
+                loop
+                width="100%"
+              ></video>
+            </div>
+      
+            <div class="modal-footer">
+              Technologies used: TIA Portal, Factory IO. Year: 2024.
+            </div>
+          '>
+          See More
+        </button>
+      </div>
+      
+
+          <div class="project__item">
+            <img src="Pare-battage/pare-batt_miniature.png" alt="Palletizing Automation" class="project__thumb">
+            <h3>Automated Fender Buoy Deployment</h3>
+            <button 
+              class="button see-more-btn" 
+              data-project="project3"
+              data-modal-content='
+                <div class="modal-section text-section">
+                    <h3>Automated Fender Buoy Deployment</h3>
+                    <p>This project was carried out during the third‑year electromechanics internship as part of the Bachelor’s final project. Its primary aim was to design and build a functional prototype of an automated fender‑buoy deployment system—the kind used on boats. The work combined 3D CAD design of printable components, selection and assembly of mechanical elements, and programming of an Arduino board to automate the system.</p>
+                </div>
+                <div class="modal-section image-section">
+                    <img src="Pare-battage/pare_batt1.png" loading="lazy" alt="Palletizing Station Process">
+                    <p>Initially, components such as the motor, transmission elements, and electronics were selected to assess the overall packaging and to design the corresponding parts. The entire system was modeled and assembled in Autodesk Inventor to verify feasibility. Many components required careful consideration to minimize the footprint.</p>
+                </div>
+                <div class="modal-section image-section">
+                    <img src="Pare-battage/pare_batt2.png" alt="Simulation in Factory IO">
+                    <p>The final phase involved automating the system by programming the Arduino board to manage all elements. The system can unspool and rewind the cable, stopping at the correct position via the position sensor; it prevents over‑winding to avoid cable jamming in the motor; and it retains the buoy’s last known position in case of an Arduino power failure. For the prototype, the Arduino board is controlled via an IR‑remote receiver.</p>
+                </div>
+                <div class="modal-section image-section">
+                    <img src="Pare-battage/pare_batt3.png" alt="Additional Process View">
+                </div>
+                <div class="modal-footer">
+                    Technologies used: Autodesk Inventor, Arduino IDE. Year: 2022.
+                </div>
+              '>
+              See More
+            </button>
+          </div>
+
+          <div class="project__item">
+            <img src="Decoupeuse laser/result.jpg" alt="Palletizing Automation" class="project__thumb">
+            <h3>Design and build of a laser CO2 cutter</h3>
+            <button 
+              class="button see-more-btn" 
+              data-project="projet4"
+              data-modal-content='
+                <div class="modal-section text-section">
+                    <h3>Design and build of a laser CO2 cutter</h3>
+                    <p>This project was undoubtedly the longest and most ambitious personal undertaking I’ve ever completed—nearly three months of work, and it’s still evolving.  
+                      The goal was to design and build a fully functional CO₂ laser cutter.  
+                      Rather than opting for an off‑the‑shelf LED‑diode machine, I challenged myself to develop my own CNC laser using a CO₂ source, which introduced significant complexity (mirror alignment, dedicated cooling system, specialized power supply…).  
+                      While an LED would have simplified the task, this added difficulty taught me far more than I ever expected.</p>
+                </div>
+                <div class="modal-section image-section">
+                    <img src="Decoupeuse laser/Laser_CAO.png" loading="lazy" alt="Laser_CAO">
+                    <p>The first step consisted of defining the mechanical architecture of the machine: selection of movement components, creation of custom parts (including several 3D printed pieces), and complete modeling in Autodesk Inventor to validate the assembly.</p>
+                </div>
+                <div class="modal-section image-section">
+                    <img src="Decoupeuse laser/building2.jpg" alt="Simulation in Factory IO">
+                    <p>Once all the parts were received, assembly began with the construction of a custom‑made table, rigid enough to support all components. Next, the laser’s frame was built using bespoke aluminum profiles, ordered online and cut to size. This stage of the build proceeded relatively quickly.</p>
+                </div>
+                <div class="modal-section image-section">
+                    <img src="Decoupeuse laser/wiring.jpg" alt="Additional Process View">
+                    <p>The second phase of assembly consisted of wiring every component; by far the longest and most delicate part. Several dozen meters of electrical cable and hundreds of solder joints were required. The installation includes a 220 V circuit, controlled by relays, to power the laser tube and air‑assist system. There are also 24 V, 12 V, 5 V, and 3.3 V sub‑circuits dedicated to motors, microcontrollers, sensors, lights, the water pump, exhaust fan, etc.<p>
+                </div>
+                <div class="modal-section image-section">
+                  <img src="Decoupeuse laser/config.jpg" alt="Additional Process View">
+                  <p>The final phase involved configuring the microcontroller to ensure optimal machine operation. Speeds, accelerations, motor rotation direction, end‑stop sensor handling, and the laser control signal were all fine‑tuned.</p>
+                </div>
+                <div class="modal-section image-section">
+                  <video
+                    src="Decoupeuse laser/cutting.mp4"
+                    loading="lazy"
+                    controls
+                    autoplay
+                    muted
+                    loop
+                    width="100%"
+                  ></video>
+                </div>
+                <div class="modal-section image-section">
+               <p>This project, although lengthy and demanding, provided an excellent opportunity to deepen my skills in mechanical design and CAD, electronic component wiring and assembly, as well as automation using ESP32 and Arduino for sensor management and relay control. Finally, it allowed me to become more familiar with laser and CNC technologies by mastering their dedicated software and tuning their parameters.</p>
+                </div>
+                <div class="modal-section image-section">
+                  <img src="Decoupeuse laser/metal_card.jpg" alt="Additional Process View">
+                </div>
+                <div class="modal-footer">
+                    Technologies used: Autodesk Inventor, Arduino IDE,Lightburn, LaserGRBL. Year: 2024.
+                </div>
+              '>
+              See More
+            </button>
+          </div>
+
+          <div class="project__item">
+            <img src="Energy monitoring project/shema.png" alt="Energy Monitoring System" class="project__thumb">
+            <h3>Energy Monitoring Analysis</h3>
+            <button
+              class="button see-more-btn"
+              data-project="projet5"
+              data-modal-content='
+                <div class="modal-section text-section">
+                  <h3>Energy Monitoring Project</h3>
+                  <p>This project was carried out in groups as part of the first‑year Master’s course in Energy Monitoring. Its objective was to study a domestic heating system and analyze its energy performance, associated costs, and investment payback. Each team examined a different heating setup; ours was a hybrid unit combining a condensing gas boiler with a heat pump.</p>
+                  <p>We had access to extensive measurement data from an existing installation provided in Excel files. These files contained readings from various sensors—temperature, power, gas consumption, and electricity usage. The sheer volume of data made handling and processing challenging, so we manipulated everything using MATLAB.</p>
+                  <p>Interpreting this data required a solid understanding of the heating system, which deepened our knowledge of heat‑pump and condensing‑boiler technologies. It also introduced us to key energy concepts like COP, SCOP, and lower heating value. By processing the data, we were able to estimate the system’s CO₂ emissions under different operating modes.</p>
+                  <p>This project was an excellent introduction to data analysis and allowed us to grasp fundamental concepts, evaluate home‑heating emissions, and understand the relative advantages and drawbacks of each system.</p>
+                </div>
+                <div class="modal-section image-section">
+                  <img src="Energy monitoring project/graph 1.png" loading="lazy" alt="Sensor Data Collection">
+                  <p>Collected sensor data—temperature, power, gas and electricity consumption—from a real‑world installation.</p>
+                </div>
+                <div class="modal-section image-section">
+                  <img src="Energy monitoring project/output (1).png" alt="MATLAB Data Processing">
+                  <p>Processed large datasets in MATLAB to calculate performance metrics such as COP and SCOP.</p>
+                </div>
+                <div class="modal-section image-section">
+                  <img src="Energy monitoring project/tableau.png" alt="CO₂ Emissions Analysis">
+                  <p>Analyzed and visualized CO₂ emissions under different operating modes to compare system performance.</p>
+                </div>
+                <div class="modal-footer">
+                  Technologies used: MATLAB, Microsoft Excel. Year: 2023.
+                </div>
+              '>
+              See More
+            </button>
+          </div>
+          
+
+          <div class="project__item">
+            <img src="Nissan_leaf/simulink_model.png" alt="Nissan Leaf Simulink Model" class="project__thumb">
+            <h3>Nissan Leaf Simulink Model</h3>
+            <button
+              class="button see-more-btn"
+              data-project="projet6"
+              data-modal-content='
+                <div class="modal-section text-section">
+                  <h3>Energy Monitoring of a Nissan Leaf</h3>
+                  <p>This project, carried out in a group as part of the Master’s course on Sustainable Mobility Transition, consisted of developing a Simulink model of the electric Nissan Leaf and analyzing its energy profile under the WLTP cycle.</p>
+                </div>
+                <div class="modal-section image-section">
+                  <img src="Nissan_leaf/force.png" loading="lazy" alt="Inertial and Resistive Forces">
+                  <p>Within the Simulink model, several subsystems interact. The first two blocks compute the inertial force and resistive forces (rolling resistance, aerodynamic drag). The WLTP‑defined acceleration profile is applied at the input, and from it—using coefficients such as mass and drag—we determine the resultant force required to move the vehicle. This force is then converted into motor torque and subsequently into electrical or mechanical power.</p>
+                </div>
+                <div class="modal-section image-section">
+                  <img src="Nissan_leaf/motor_map.jpg" alt="Motor Efficiency Lookup Table">
+                  <p>The motor’s efficiencies were extracted from a topographic map provided by the manufacturer and inserted into a lookup table. This table gives efficiency as a function of speed and torque, allowing us to compute the instantaneous electrical power required to propel the vehicle.</p>
+                  <p>Additionally, during braking, dedicated blocks calculate the energy recovered through regenerative braking.</p>
+                </div>
+                <div class="modal-section image-section">
+                  <img src="Nissan_leaf/motor.png" alt="Battery State of Charge Modeling">
+                  <p>The final part of the model deals with the battery and its State of Charge (SOC). A lookup table contains the necessary data to model this component. Using battery voltage and required power, the current is calculated, from which the SOC evolution is derived.</p>
+                </div>
+                <div class="modal-section image-section">
+                  <img src="Nissan_leaf/soc.png" alt="Consumption and CO₂ Emissions Analysis">
+                  <p>Finally, consumption and CO₂ emission balances were produced, including a life‑cycle analysis of the vehicle and comparisons with other technologies.</p>
+                  <p>This project was a great opportunity to put my dynamic modeling skills in Simulink into practice and to strengthen my expertise in energy analysis and life‑cycle assessment of electric vehicles.</p>
+                </div>
+                <div class="modal-section image-section">
+                  <img src="Nissan_leaf/comparaison_table.png" alt="Consumption and CO₂ Emissions Analysis">
+                  
+                </div>
+                <div class="modal-footer">
+                  Technologies used: MATLAB/Simulink. Year: 2024.
+                </div>
+              '>
+              See More
+            </button>
+          </div>
+          
+
+
+
+    </div>
+  </section>
+  
+  <!-- Modal Structure -->
+  <div class="modal" id="project-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-body">
+        <!-- Le contenu sera injecté dynamiquement -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Script pour gérer l'ouverture/fermeture du modal -->
+  <script>
+    // Mise à jour dynamique du contenu du modal selon le bouton cliqué
+    document.querySelectorAll(".see-more-btn, .view-cursus-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const modalContent = btn.dataset.modalContent;
+        const modalBody = document.getElementById("modal-body");
+        modalBody.innerHTML = modalContent;
+        document.getElementById("project-modal").style.display = "flex";
+      });
+    });
+    
+    // Gestion de la fermeture du modal
+    document.querySelector(".modal .close").addEventListener("click", () => {
+      document.getElementById("project-modal").style.display = "none";
+    });
+    
+    // Fermer le modal en cliquant en dehors du contenu
+    window.addEventListener("click", event => {
+      const modal = document.getElementById("project-modal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var typed = new Typed("#typed", {
+      strings: [
+        "I'm looking for a job",
+        "I'm an engineer (soon)",
+        "Driven by curiosity",
+        "Passionate about innovation",
+        "Ready to create solutions"
+      ],
+      typeSpeed: 50,
+      backSpeed: 25,
+      backDelay: 2000,
+      loop: true
+    });
+  });
+</script>
+  
+  
+
+
+    
+
+
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact__container bd-grid">
+          <div class="contact__info">
+              <!-- Email professionnel -->
+              <div class="contact__item">
+                  <i class='bx bx-envelope'></i>
+                  <p>antoine.robesco@student.hepl.be</p>
+                  <button class="copy-btn" data-email="antoine.robesco@student.hepl.be">
+                      <i class='bx bx-copy'></i>
+                  </button>
+              </div>
+
+              <!-- Email personnel -->
+              <div class="contact__item">
+                  <i class='bx bx-envelope'></i>
+                  <p>antoine.robesco@hotmail.com</p>
+                  <button class="copy-btn" data-email="antoine.robesco@hotmail.com">
+                      <i class='bx bx-copy'></i>
+                  </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact__item">
+                  <i class='bx bxl-linkedin-square'></i>
+                  <a href="https://www.linkedin.com/in/antoine-robesco-1428142a8" target="_blank">LinkedIn Profile</a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Copy email buttons -->
+    <script>
+      document.querySelectorAll(".copy-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const email = btn.dataset.email;
+          navigator.clipboard.writeText(email).then(() => {
+            const icon = btn.querySelector("i");
+            icon.classList.replace("bx-copy","bx-check");
+            setTimeout(()=> icon.classList.replace("bx-check","bx-copy"), 2000);
+          });
+        });
+      });
+    </script>
+
+    
+    
+
+
+<!-- Ajoutez ce script en bas, avant la fermeture de la balise </body> -->
+<script>
+    const navToggle = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+  
+    navToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  
+    // Ferme le menu lorsqu'un lien est cliqué
+    document.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navList.classList.remove('active');
+      });
+    });
+  </script>
+
+<!-- three.js and Vanta.js must be loaded first -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+
+
+<script>
+  VANTA.NET({
+    el: "#vantabg",                // target element
+    backgroundColor: 0x2c2f33,     // dark slate grey
+    color: 0x909090,               // cool light grey for the network lines
+    maxDistance: 25.00,            // maximum distance between connected points
+    spacing: 18.00,                // spacing of the mesh
+    showDots: true                 // display the dots at each point
+  });
+</script>
