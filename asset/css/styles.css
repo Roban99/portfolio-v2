@@ -120,11 +120,16 @@ body {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  
 }
 .hero__subtitle {
   font-size: 1.25rem;
   margin-bottom: 2rem;
 }
+.hero__title .highlight {
+  color: #66fcf1;      /* turquoise accent */
+}
+
 .button {
   display: inline-block;
   padding: 0.75rem 2rem;
@@ -171,16 +176,20 @@ body {
   font-weight: 500;
 }
 .skill__img {
-  display: block;         /* Pour permettre d'appliquer margin auto */
-  margin: 1rem auto;      /* Centre horizontalement l'image */
-  max-width: 100%;        /* L'image ne dépassera pas la largeur du conteneur */
-  max-height: 80vh;       /* Limite la hauteur pour éviter qu'elle ne dépasse la fenêtre */
-  width: auto;            /* Ajuste automatiquement la largeur */
-  height: auto;           /* Ajuste automatiquement la hauteur */
-  object-fit: contain;    /* Conserve les proportions sans déformer l'image */
+  display: block;         
+  margin: 1rem auto;      
+  max-width: 100%;        
+  max-height: 80vh;       
+  width: auto;            
+  height: auto;           
+  object-fit: contain;    
   border-radius: 8px;
 }
-/* Zone introductive dans Skills */
+.skill__detail {
+  margin-bottom: 2rem; /* espace de 2rem sous chaque bloc */
+}
+
+
 .skills__intro {
   text-align: center;
   color: #e1e1e1;
@@ -188,12 +197,17 @@ body {
   padding: 0 1rem;
 }
 
-/* Styling pour le bouton "View My Cursus" */
+
 .skills__cursus {
   text-align: center;
   margin-top: 1rem;
 }
-/* Styles pour la structure du cursus dans le modal */
+
+.skill__title span {
+  font-size: 1.5rem; /* Ajustez selon vos besoins */
+  color: #fff;
+}
+
 .cursus-container {
   display: flex;
   flex-direction: column;
@@ -203,7 +217,7 @@ body {
 
 .cursus-year h4 {
   margin-bottom: 0.5rem;
-  color: #66fcf1; /* Couleur des titres d'année */
+  color: #66fcf1; 
 }
 
 .cursus-courses {
@@ -232,7 +246,7 @@ body {
   background: #52d7bf;
 }
 
-/* Projects Section */
+
 .projects__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -263,13 +277,73 @@ body {
   font-weight: 600;
 }
 
-/* Responsive */
+
 @media screen and (max-width: 768px) {
+  /* 1) le hero reste en full-screen */
+  .home .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* 2) on fait un conteneur absolu, de hauteur fixe */
+  .hero__title {
+    position: absolute;
+    top: 30%;                    /* à ajuster pour placer verticalement */
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 90vw;                 /* ne déborde jamais */
+    max-width: 600px;            /* optionnel */
+    padding: 0 1rem;             /* marge latérale */
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.2;
+    height: 8rem;                /* ↑ réserve 3 lignes (titre+typing) */
+    overflow: hidden;            /* jamais de scroll ou d’agrandissement */
+  }
+
+  /* 3) static text reste en haut du conteneur, pas besoin de le toucher */
+
+  /* 4) on plaque la zone tapée en bas de ce même conteneur */
+  .hero__title .typed-container {
+    position: absolute;
+    bottom: 0.5rem;               /* garde l’espacement sous le titre */
+    left: 1rem;                   /* s’aligne à gauche avec un petit padding */
+    transform: none;              /* on supprime le translateX */
+    width: calc(100% - 2rem);     /* prend toute la largeur restante */
+    font-size: 1.1rem;           /* taille inférieure au titre */
+    text-align: left;             /* alignement à gauche */
+    color: #66fcf1;               /* votre turquoise accent */
+    white-space: normal;          
+    word-break: break-word;       
+  }
+
+  /* 5) le bouton reste fixe, hors flux */
+  .home .hero .button {
+    position: fixed !important;
+    bottom: 40px    !important;
+    left: 50%       !important;
+    transform: translateX(-50%) !important;
+    z-index: 2000;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
   :root {
-    --mobile-menu-top: 10%; /* Position verticale du menu par rapport au haut */
-    --mobile-menu-left: auto;    /* Position horizontale depuis la gauche */
-    --mobile-menu-right: 5%;   /* Position horizontale depuis la droite */
+    --mobile-menu-top: 10%; 
+    --mobile-menu-left: auto;    
+    --mobile-menu-right: 5%;   
   }
   .about__container {
     grid-template-columns: 1fr;
@@ -285,6 +359,7 @@ body {
     display: none;
     padding: 1rem 0;
   }
+  
   .nav__toggle {
     display: block;
     color: #fff;
@@ -299,10 +374,10 @@ body {
   .nav__toggle {
     display: block;
   }
-}
 
 
-/* Bouton de fermeture dans le modal */
+
+
 .modal .close {
   position: absolute;
   top: 1rem;
@@ -310,6 +385,11 @@ body {
   color: #66fcf1;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.modal-section.text-section h3 {
+  font-size: 2rem; /* Ajustez la taille selon vos besoins */
+  color: #66fcf1;    /* Vous pouvez également utiliser une valeur hexadécimale, ex: #0000FF */
 }
 
 /* Galerie du modal */
@@ -331,13 +411,13 @@ body {
 }
 
 
-/* Style de chaque projet */
+
 .projects__container .project__item {
   background: rgba(27, 38, 44, 0.5);
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Ajout d'une ombre discrète pour la séparation */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
@@ -351,19 +431,19 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Bouton "see more" personnalisé (utilise le style de base du bouton) */
+
 .see-more-btn {
   margin-top: 1rem;
 }
-/* Effet au survol pour accentuer la séparation */
+
 .projects__container .project__item:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Button See More clairement positionné */
+
 .projects__container .project__item .button {
-  margin-top: 1rem; /* Espace au-dessus du bouton */
+  margin-top: 1rem; 
   padding: 0.5rem 1rem;
   background: #66fcf1;
   border: none;
@@ -373,7 +453,7 @@ body {
 }
 
 
-/* Modal : assurez-vous que le modal est centré et visible quand affiché */
+
 .modal {
   display: none;
   position: fixed;
@@ -398,7 +478,7 @@ body {
   max-height: 90vh;
 }
 
-/* Bouton de fermeture dans le modal */
+
 .modal .close {
   position: absolute;
   top: 1rem;
@@ -407,7 +487,7 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
 }
-/* Styles pour la vidéo dans le modal */
+
 .modal-section.image-section video {
   display: block;
   margin: 0 auto;
@@ -428,15 +508,15 @@ body {
   margin-top: 1rem;
 }
 .modal-section.image-section img {
-  max-width: 100%; /* S'assure que l'image ne dépasse pas le conteneur */
-  height: auto;    /* Maintient les proportions */
-  object-fit: contain; /* Optionnel pour s'assurer que l'image ne soit pas déformée */
+  max-width: 100%; 
+  height: auto;    
+  object-fit: contain; 
   border-radius: 8px;
   margin: 1rem auto;
  
 }
 .modal-footer {
-  background: rgba(102, 252, 241, 0.2); /* Changez la couleur selon votre design */
+  background: rgba(102, 252, 241, 0.2); 
   color: #fff;
   padding: 1rem;
   text-align: left;
@@ -453,7 +533,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(27,38,44,0.4); /* Ajustez l'opacité et la couleur selon vos besoins */
+  background: rgba(27,38,44,0.4); 
   z-index: -1;
 }
 .copy-btn {
@@ -463,5 +543,5 @@ body {
 
 .copy-btn i {
   background-color: transparent;
-  color: #66fcf1; /* Couleur modifiée pour rendre l'icône visible */
+  color: #66fcf1; 
 }
